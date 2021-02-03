@@ -22,7 +22,7 @@ void _swapint(int *num1, int *num2)
  *@array: Pointer to the elements
  *@size: size of the array
  *
- * Return: void
+ *Description: Prints the array after each swap
  */
 
 void bubble_sort(int *array, size_t size)
@@ -38,13 +38,14 @@ void bubble_sort(int *array, size_t size)
 		s = true;
 
 		for (i = 0; i < len - 1; i++)
+		{
 			if (array[i] > array[i + 1])
 			{
 				_swapint(array + i, array + i + 1);
 				print_array(array, size);
-				s = false
+				s = false;
 			}
+		}
+		len--;
 	}
-	len--;
-}
 }
