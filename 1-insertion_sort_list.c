@@ -45,7 +45,7 @@ void insertion_sort_list(listint_t **list)
 		t = i->next;
 		s = i->prev;
 
-		while (s != NULL && i->n < i->n)
+		while (s != NULL && i->n < s->n)
 		{
 			_swapnodes(list, &s, i);
 			print_list((const listint_t *)*list);
