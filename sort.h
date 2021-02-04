@@ -35,5 +35,6 @@ void _swapint(int *num1, int *num2);
 void bubble_sort(int *array, size_t size);
 void _swapnodes(listint_t **h, listint_t **n, listint_t *m);
 void insertion_sort_list(listint_t **list);
+void selection_sort(int *array, size_t size);
 
 #endif /*SORT_H*/
