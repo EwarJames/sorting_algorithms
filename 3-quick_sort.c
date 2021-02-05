@@ -25,6 +25,7 @@ void _swapint(int *num1, int *num2)
  *@right: the ending index of the subset to order.
  *
  *Description: The final partition index.
+ *Return: final partition index
  */
 int lomuto_partition(int *array, size_t size, int left, int right)
 {
